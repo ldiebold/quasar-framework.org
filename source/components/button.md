@@ -118,7 +118,7 @@ export default {
 | `label`      | String/Number | Button label. |
 | `tabindex`   | Number | Accessibility; set explicit HTML "tabindex" attribute value. |
 | `repeat-timeout` | Number/Function | Enables multiple `@click` events on click/tap and hold. Function gets a Number (timesTriggered) as parameter. |
-| `wait-for-ripple` | Boolean | Wait for ripple then before emitting `@click` event. Mat theme only. |
+| `wait-for-ripple` | Boolean | Wait for ripple before emitting the `@click` event. Mat theme only. |
 | `type` | String | (v0.17+) One of "a" (uses an `<a>` tag), "button", "submit", "reset". |
 
 #### Router syntax sugar

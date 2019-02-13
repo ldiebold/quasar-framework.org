@@ -324,7 +324,7 @@ build: {
       ...cfg.resolve.alias, // This adds the existing alias
 
       // Add your own alias like this
-      myalias: path.resolve(__dirname, './src/somefolder'),
+      '~myalias': path.resolve(__dirname, './src/somefolder'),
     }
   }
 }
@@ -336,7 +336,7 @@ Equivalent with chainWebpack():
 build: {
   chainWebpack (chain, { isServer, isClient }) {
     chain.resolve.alias
-      .set('myalias', path.resolve(__dirname, './src/somefolder'))
+      .set('~myalias', path.resolve(__dirname, './src/somefolder'))
   }
 }
 ```
